@@ -1,5 +1,5 @@
-##EVALUACION-DESARROLLO-DE-APLICACIONES-WEB-SOLEMNE-N-1
-##Feria de Innovación Tecnológica 2026
+##EVALUACION-DESARROLLO-DE-APLICACIONES-WEB-SOLEMNE-N-1 ##
+##Feria de Innovación Tecnológica 2026 ##
 
 # Breve descripción del sitio (proyecto)
 Sitio web informativo desarrollado para la Feria de Innovación Tecnológica de nuestra institución de educación superior. El sitio permite a los visitantes conocer el propósito del evento, explorar los proyectos tecnológicos destacados, revisar el programa de actividades e inscribirse mediante un formulario de contacto.

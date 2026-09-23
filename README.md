@@ -21,6 +21,4 @@ Sitio web informativo desarrollado para la Feria de Innovación Tecnológica de 
   4. Navegar utilizando el menú principal hacia las distintas secciones del sitio
 
 # Distribución de responsabilidades:
-* María Alejandra Astrelli :
-* Antonio Gómez :
-* James Honeyman : 
+Se optó por implementar un flujo de trabajo secuencial por capas. En esta metodología, un integrante establecía la base inicial y el siguiente continuaba su desarrollo en un ciclo iterativo hasta alcanzar la satisfacción de todo el grupo. La responsabilidad de cada miembro consistió en recibir el avance de su compañero, profundizar en él y prepararlo para lo siguiente en la rúbrica, garantizando un esfuerzo conjunto de principio a fin. Este modelo fue respaldado por una comunicación constante y activa, fundamental para discutir detalles, acordar modificaciones y asegurar la cohesión del trabajo."

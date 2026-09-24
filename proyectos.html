@@ -9,7 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>   
+
+<body>
     <div class="top-bar">
         <p>15 AL 18 DE NOVIEMBRE 2026 | AUDITORIO CENTRAL UNIVERSIDAD</p>
     </div>
@@ -18,46 +19,39 @@
         <div class="logo-container">
             <h1 class="logo">FIT<span>2026</span></h1>
         </div>
-        
-        <!-- Ícono de búsqueda -->
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="proyectos.html" class="active">PROYECTOS</a></li>
+                <li><a href="programa.html">PROGRAMA</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+
         <div class="header-icons">
-            <span class="icon">🔍</span>
+            <span class="icon"></span>
         </div>
     </header>
 
-    <!-- barra de navegación para todas las páginas-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item px-3"><a class="nav-link" href="index.html">INICIO</a></li>
-                    <li class="nav-item px-3"><a class="nav-link active" href="proyectos.html">PROYECTOS</a></li>
-                    <li class="nav-item px-3"><a class="nav-link" href="programa.html">PROGRAMA</a></li>
-                    <li class="nav-item px-3"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
     <div class="title-banner">
         <h2>PROYECTOS DESTACADOS</h2>
     </div>
 
     <main>
         <section class="presentation-section">
-            <h3>PROYECTOS DEL EVENTO</h3>
-            <p>Conoce los proyectos desarrollados por los estudiantes y profesionales, enfocados en resolver
-                problemáticas reales de nuestra sociedad a través de la tecnología.</p>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h3>PROYECTOS DEL EVENTO</h3>
+                <p>Conoce los proyectos desarrollados por los estudiantes y profesionales, enfocados en resolver
+                    problemáticas reales de nuestra sociedad a través de la tecnología.</p>
+            </div>
         </section>
 
         <section class="projects-section">
             <!-- Proyecto 1 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="" alt="BarberiaApp">
+                    <img src="img/barberia.png" alt="BarberiaApp">
                 </div>
                 <div class="project-content">
                     <span class="project-category">Desarrollo Móvil</span>
@@ -70,14 +64,17 @@
                     </div>
                 </div>
                 <div class="project-footer">
-                    <a href="#" class="btn-primary">Ver detalles</a>
+                    <div style="margin-bottom: 15px; font-size: 13px; color: #555; text-align: center;">
+                        <span>📍 Stand: <strong>A-12</strong></span>
+                    </div>
+                    <a href="#" class="btn-primary">Ver Detalles</a>
                 </div>
             </div>
 
             <!-- Proyecto 2 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="" alt="Robotica">
+                    <img src="img/robot.jpg" alt="Robotica">
                 </div>
                 <div class="project-content">
                     <span class="project-category">Robótica</span>
@@ -90,14 +87,17 @@
                     </div>
                 </div>
                 <div class="project-footer">
-                    <a href="#" class="btn-primary">Ver detalles</a>
+                    <div style="margin-bottom: 15px; font-size: 13px; color: #555; text-align: center;">
+                        <span>📍 Stand: <strong>B-04</strong></span>
+                    </div>
+                    <a href="#" class="btn-primary">Ver Detalles</a>
                 </div>
             </div>
 
             <!-- Proyecto 3 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="" alt="Educación">
+                    <img src="img/gamificacion.webp" alt="Educación">
                 </div>
                 <div class="project-content">
                     <span class="project-category">Educación Tech</span>
@@ -110,13 +110,16 @@
                     </div>
                 </div>
                 <div class="project-footer">
-                    <a href="#" class="btn-primary">Ver detalles</a>
+                    <div style="margin-bottom: 15px; font-size: 13px; color: #555; text-align: center;">
+                        <span>📍 Stand: <strong>C-08</strong></span>
+                    </div>
+                    <a href="#" class="btn-primary">Ver Detalles</a>
                 </div>
             </div>
             <!-- Proyecto 4 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="" alt="Ciberseguridad">
+                    <img src="img/seguridad%20redes.png" alt="Ciberseguridad">
                 </div>
                 <div class="project-content">
                     <span class="project-category">Ciberseguridad</span>
@@ -129,14 +132,17 @@
                     </div>
                 </div>
                 <div class="project-footer">
-                    <a href="#" class="btn-primary">Ver detalles</a>
+                    <div style="margin-bottom: 15px; font-size: 13px; color: #555; text-align: center;">
+                        <span>📍 Stand: <strong>A-15</strong></span>
+                    </div>
+                    <a href="#" class="btn-primary">Ver Detalles</a>
                 </div>
             </div>
 
             <!-- Proyecto 5 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="" alt="IoT Agrícola">
+                    <img src="img/Sistema%20riego.webp" alt="IoT Agrícola">
                 </div>
                 <div class="project-content">
                     <span class="project-category">Internet de las Cosas</span>
@@ -149,14 +155,17 @@
                     </div>
                 </div>
                 <div class="project-footer">
-                    <a href="#" class="btn-primary">Ver detalles</a>
+                    <div style="margin-bottom: 15px; font-size: 13px; color: #555; text-align: center;">
+                        <span>📍 Stand: <strong>B-11</strong></span>
+                    </div>
+                    <a href="#" class="btn-primary">Ver Detalles</a>
                 </div>
             </div>
 
             <!-- Proyecto 6 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="" alt="Realidad Virtual">
+                    <img src="img/Vr%20para%20lab.jpg" alt="Realidad Virtual">
                 </div>
                 <div class="project-content">
                     <span class="project-category">Realidad Virtual</span>
@@ -169,16 +178,94 @@
                     </div>
                 </div>
                 <div class="project-footer">
-                    <a href="#" class="btn-primary">Ver detalles</a>
+                    <div style="margin-bottom: 15px; font-size: 13px; color: #555; text-align: center;">
+                        <span>📍 Stand: <strong>C-03</strong></span>
+                    </div>
+                    <a href="#" class="btn-primary">Ver Detalles</a>
                 </div>
             </div>
         </section>
+
+        <!-- Sección de Criterios de Evaluación -->
+        <section class="presentation-section"
+            style="margin-top: 60px; background-color: #fdfdfd; padding: 40px; border-radius: 12px; border: 1px solid #eaeaea; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+            <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+                <h3 style="text-align: center;">Criterios de Evaluación</h3>
+                <p style="text-align: center; margin-bottom: 30px;">Los proyectos presentados en la feria serán
+                    evaluados
+                    por un jurado experto en base a los siguientes criterios:</p>
+
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eaeaea;">
+                        <strong>Innovación y Creatividad:</strong><br>
+                        <span style="color: #666; font-size: 14px;">Grado de originalidad de la solución propuesta y su
+                            diferenciación frente a alternativas existentes en el mercado.</span>
+                    </li>
+                    <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eaeaea;">
+                        <strong>Viabilidad Técnica:</strong><br>
+                        <span style="color: #666; font-size: 14px;">Funcionalidad real del prototipo, solidez del código
+                            y
+                            uso adecuado de las tecnologías y herramientas (stack técnico).</span>
+                    </li>
+                    <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eaeaea;">
+                        <strong>Impacto y Relevancia:</strong><br>
+                        <span style="color: #666; font-size: 14px;">Potencial del proyecto para resolver problemáticas
+                            reales y mejorar la calidad de vida de las personas o la eficiencia de los procesos.</span>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <strong>Defensa y Presentación:</strong><br>
+                        <span style="color: #666; font-size: 14px;">Claridad expositiva del equipo en el stand, diseño
+                            del
+                            material de apoyo y capacidad para responder a las preguntas del jurado.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Llamado a la acción -->
+        <section style="text-align: center; margin: 60px auto; max-width: 800px; padding: 0 20px;">
+            <h3 style="font-size: 24px; color: #1a1a1a; margin-bottom: 15px; font-weight: bold;">¡No te pierdas ninguna
+                presentación!</h3>
+            <p style="color: #666; font-size: 16px;">Si te intereso alguno de los
+                proyectos te invitamos a revisar el programa de actividades para ver los horarios de las presentaciones,
+                para que puedas saber mas a detalle de cada proyecto y conocer a las personas detras de cada idea.</p>
+            <a href="programa.html" class="btn-primary"
+                style="padding: 15px 40px; text-decoration: none; border-radius: 8px; font-size: 15px;">EXPLORAR EL
+                PROGRAMA DE ACTIVIDADES</a>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2026 Feria de Innovación Tecnológica. Proyecto desarrollado por James Honeyman, Alejandra Astrelli y Antonio Gómez.</p>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p><strong>Ubicación:</strong> Av. Pedro de Valdivia 425, Providencia, Santiago.</p>
+                <p>&copy; 2026 Feria de Innovación Tecnológica. Proyecto desarrollado por James Honeyman, Alejandra
+                    Astrelli y Antonio Gómez.</p>
+            </div>
+
+            <div class="footer-social">
+                <p>Síguenos y revisa nuestro código:</p>
+                <a href="https://github.com/jamesuhoneyman-source/EVALUACI-N-DESARROLLO-DE-APLICACIONES-WEB-SOLEMNE-N-1"
+                    target="_blank" class="github-link">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                    Repositorio Oficial
+                </a>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('.main-header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
 </body>
 
 </html>

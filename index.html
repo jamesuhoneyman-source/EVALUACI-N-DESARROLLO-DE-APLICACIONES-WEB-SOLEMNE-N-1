@@ -5,44 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feria de Innovación Tecnológica</title>
-    <!-- boostrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <!-- Franja superior de anuncio -->
     <div class="top-bar">
         <p>15 AL 18 DE NOVIEMBRE 2026 | AUDITORIO CENTRAL UNIVERSIDAD</p>
     </div>
 
-    <!-- Encabezado con Logo y Navegación Centrada -->
     <header class="main-header">
         <div class="logo-container">
             <h1 class="logo">FIT<span>2026</span></h1>
         </div>
 
-        <!--reemplacé el menu del main por la barra del boostrap-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item px-3"><a class="nav-link active" href="index.html">INICIO</a></li>
-                        <li class="nav-item px-3"><a class="nav-link" href="proyectos.html">PROYECTOS</a></li>
-                        <li class="nav-item px-3"><a class="nav-link" href="programa.html">PROGRAMA</a></li>
-                        <li class="nav-item px-3"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
-                    </ul>
-                </div>
-            </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">INICIO</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+                <li><a href="programa.html">PROGRAMA</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
         </nav>
 
-        <!-- Iconos simulados a la derecha para equilibrar el diseño -->
         <div class="header-icons">
-            <span class="icon">🔍</span>
+            <span class="icon"></span>
         </div>
     </header>
 
@@ -53,45 +40,93 @@
 
     <!-- Contenido Principal Centrado -->
     <main>
-        <section class="presentation-section">
-            <h3>PROPÓSITO Y VISIÓN</h3>
+        <!-- Sección con imagen de fondo sutil y texto legible -->
+        <section class="presentation-section con-fondo">
+            <div class="contenedor-texto-fondo">
+                <h3>PROPÓSITO Y VISIÓN</h3>
 
-            <p>La Feria de Innovación Tecnológica nace con una visión clara: redefinir la manera en que los estudiantes
-                y profesionales de la tecnología conectan con las soluciones del futuro. Un espacio profesional, pero
-                cercano, donde cada proyecto busca resolver problemáticas reales de nuestra sociedad.</p>
+                <p>La Feria de Innovación Tecnológica nace con una visión clara: redefinir la manera en que los
+                    estudiantes
+                    y profesionales de la tecnología conectan con las soluciones del futuro. Un espacio profesional,
+                    pero
+                    cercano, donde cada proyecto busca resolver problemáticas reales de nuestra sociedad.</p>
 
-            <p>Nos alejamos de las exposiciones tradicionales para dar paso a un entorno interactivo y colaborativo.
-                Creemos que la verdadera diferencia está en el impacto social, en la aplicación práctica de la
-                ingeniería y en la dedicación de cada equipo participante.</p>
+                <p>Nos alejamos de las exposiciones tradicionales para dar paso a un entorno interactivo y colaborativo.
+                    Creemos que la verdadera diferencia está en el impacto social, en la aplicación práctica de la
+                    ingeniería y en la dedicación de cada equipo participante.</p>
 
-            <p>Nos enfocamos en exhibir prototipos funcionales, desarrollo de software, robótica y soluciones de
-                telemedicina, destacando el rigor técnico que cada proyecto merece. Porque para nosotros, no se trata
-                solo de programar, sino de cómo la tecnología mejora la calidad de vida.</p>
+                <p>Nos enfocamos en exhibir prototipos funcionales, desarrollo de software, robótica y soluciones de
+                    telemedicina, destacando el rigor técnico que cada proyecto merece. Porque para nosotros, no se
+                    trata
+                    solo de programar, sino de cómo la tecnología mejora la calidad de vida.</p>
 
-            <div class="cta-container">
-                <p class="event-reminder"><strong>¡Te esperamos del 15 al 18 de Noviembre en el Auditorio
-                        Central!</strong></p>
-                <!-- enlace "pagina3.html" a "contacto.html"  -->
-                <a href="contacto.html" class="btn-primary">INSCRIBIRSE AHORA</a>
-            </div>
         </section>
 
-        <!-- Aqui se deben dejar imagenes para la galeria  -->
         <section class="gallery-section">
             <h3 class="gallery-title">Proyectos Destacados</h3>
             <div class="image-grid">
+                <div class="grid-item">
+                    <img src="img/pupils-doing-task-laptops-focused-teacher-monitoring-them.jpg"
+                        alt="Forjando el futuro digital.">
+                </div>
+                <div class="grid-item">
+                    <img src="img/young-man-woman-vr-glasses-doing-experiments-robotics-laboratory-robot-tools.jpg"
+                        alt="Ideas que desafían los límites.">
+                </div>
+                <div class="grid-item">
+                    <img src="img/Exposicion-inmersiva-de-arte-digital.jpeg" alt="Innovación pura en exhibición.">
+                </div>
+                <div class="grid-item">
+                    <img src="img/StockCake-Feria_tecnológica_innovadora-1278825-standard.jpg"
+                        alt="Ingeniería de próxima generación.">
+                </div>
+            </div>
+        </section>
 
+        <section class="presentation-section con-fondo-contacto " style="margin-bottom: 0;">
+            <div class="contenedor-texto-fondo">
+                <h2>¡TE ESPERAMOS EN LA FERIA!</h2>
+                <p style="font-size: 18px; margin-top: 15px;">
+                    Descubre cómo estas ideas cambiarán el mundo. Ingresa a la sección de
+                    <a href="contacto.html" class="link-destacado">CONTACTO</a>
+                    si estás interesado en asistir o participar.
+                </p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Feria de Innovación Tecnológica. Proyecto desarrollado por James Honeyman, Alejandra Astrelli y
-            Antonio Gómez.</p>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p><strong>Ubicación:</strong> Av. Pedro de Valdivia 425, Providencia, Santiago.</p>
+                <p>&copy; 2026 Feria de Innovación Tecnológica. Proyecto desarrollado por James Honeyman, Alejandra
+                    Astrelli y Antonio Gómez.</p>
+            </div>
+
+            <div class="footer-social">
+                <p>Síguenos y revisa nuestro código:</p>
+                <a href="https://github.com/jamesuhoneyman-source/EVALUACI-N-DESARROLLO-DE-APLICACIONES-WEB-SOLEMNE-N-1"
+                    target="_blank" class="github-link">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                    Repositorio Oficial
+                </a>
+            </div>
+        </div>
     </footer>
 
-    <!--boostrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('.main-header');
+
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+
 </body>
 
 </html>

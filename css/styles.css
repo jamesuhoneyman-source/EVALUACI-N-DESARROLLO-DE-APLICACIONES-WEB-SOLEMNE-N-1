@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-
 .top-bar {
     background-color: #f5f5f5;
     text-align: center;
@@ -23,7 +21,12 @@ body {
     color: #555;
 }
 
+.top-bar p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
+/*NAVEGACIÓN*/
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -31,6 +34,19 @@ body {
     padding: 20px 50px;
     background-color: #fff;
     border-bottom: 1px solid #eaeaea;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: padding 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.main-header.scrolled {
+    padding: 10px 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-bottom: none;
+    backdrop-filter: blur(5px);
 }
 
 .logo-container {
@@ -41,13 +57,15 @@ body {
     font-size: 24px;
     font-weight: 900;
     letter-spacing: -1px;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1;
 }
 
 .logo span {
     font-weight: 300;
     color: #2b82c9;
 }
-
 
 .main-nav {
     flex: 2;
@@ -56,9 +74,11 @@ body {
 }
 
 .main-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+    list-style: none !important;
+    display: flex !important;
+    gap: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .main-nav ul li a {
@@ -79,9 +99,8 @@ body {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    font-size: 18px;
+    font-size: center;
 }
-
 
 .title-banner {
     background-color: #2b82c9;
@@ -96,15 +115,39 @@ body {
     margin: 0;
 }
 
-
+/*SECCIONES CON FONDO EXTENDIDO*/
 .presentation-section {
-    max-width: 800px;
-    margin: 60px auto;
-    text-align: center;
-    padding: 0 20px;
+    width: 100%;
+    padding: 80px 20px;
+    margin: 0 0 60px 0;
 }
 
-.presentation-section h3 {
+.con-fondo {
+    background: url('../img/tecnologia-fondo-AI-transformacion-digital.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.con-fondo-contacto {
+    background: url('../img/Orador_cautivando_a_la_audiencia-661003-standard.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contenedor-texto-fondo {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.presentation-section h3,
+.contenedor-texto-fondo h2 {
     font-size: 28px;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -113,38 +156,38 @@ body {
 
 .presentation-section p {
     font-size: 15px;
-    color: #444;
+    color: #333;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
-
-.cta-container {
-    margin-top: 40px;
-}
-
-.event-reminder {
-    font-size: 16px !important;
-    color: #2b82c9 !important;
-    margin-bottom: 20px !important;
-}
-
-.btn-primary {
-    display: inline-block;
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 12px 30px;
+.link-destacado {
+    color: #2b82c9;
+    font-weight: 900;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    text-transform: uppercase;
-    transition: background-color 0.3s;
+    border-bottom: 3px solid #2b82c9;
+    padding-bottom: 2px;
+    transition: color 0.3s, border-color 0.3s;
 }
 
-.btn-primary:hover {
-    background-color: #2b82c9;
+.link-destacado:hover {
+    color: #1a1a1a;
+    border-color: #1a1a1a;
 }
 
-/* Galería de Imágenes  */
+/*EFECTO SCROLL*/
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*GALERÍA DE IMÁGENES*/
 .gallery-section {
     max-width: 1200px;
     margin: 0 auto 60px;
@@ -169,11 +212,58 @@ body {
     height: 250px;
     object-fit: cover;
     background-color: #e0e0e0;
-    /* en este espacio pueden dejar una imagen*/
     display: block;
 }
 
+/*FOOTER INSTITUCIONAL*/
+.main-footer {
+    background-color: #b0c9ff;
+    border-top: 1px solid #eaeaea;
+    padding: 30px 20px;
+    color: #555;
+    font-size: 13px;
+    margin-top: 40px;
+}
 
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-info p {
+    margin-bottom: 5px;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+.footer-social p {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #2b82c9;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.github-link:hover {
+    color: #1a5c94;
+}
+
+/*RESPONSIVIDAD */
 @media (max-width: 768px) {
     .image-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -183,10 +273,18 @@ body {
         flex-direction: column;
         gap: 20px;
     }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social {
+        text-align: center;
+    }
 }
 
-
-/* Proyectos */
+/*CÓDIGO DE PROYECTOS*/
 .projects-section {
     max-width: 1200px;
     margin: 0 auto 60px;
@@ -279,16 +377,41 @@ body {
 
 .project-footer .btn-primary {
     display: block;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
     text-align: center;
     border-radius: 6px;
     padding: 10px 15px;
+    border: none;
+    cursor: pointer;
 }
 
-footer {
-    text-align: center;
-    padding: 30px;
-    background-color: #f9f9f9;
-    font-size: 12px;
-    color: #777;
-    border-top: 1px solid #eaeaea;
+.project-footer .btn-primary:hover {
+    background-color: #2b82c9;
+}
+
+/* Botón principal (Global) */
+.btn-primary {
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.btn-primary:hover {
+    background-color: #2b82c9;
+    color: #fff;
 }
